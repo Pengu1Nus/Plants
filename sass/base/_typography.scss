@@ -1,0 +1,54 @@
+body {
+  font-family: $font-default;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $color-text-dark;
+}
+
+.heading-1 {
+  font-size: 4.5rem;
+  line-height: 5rem;
+  font-weight: 700;
+  color: $color-text-light;
+  
+  &--modify {
+    color: $color-primary;
+  }
+}
+
+.heading-2 {
+  font-family: $font-secondary;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  font-weight: 400;
+  color: $color-primary;
+  &--modify {
+    color: $color-secondary;
+  }
+
+  &--centered {
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+.heading-3 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #000;
+
+  &--modify {
+    color: $color-primary;
+  }
+}
+
+.heading-4 {
+  
+}
+
+.heading-5 {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: $color-secondary;
+}

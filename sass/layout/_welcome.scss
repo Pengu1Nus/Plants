@@ -1,0 +1,26 @@
+.welcome {
+  padding-top: 6rem;
+  background-color: $color-background;
+
+  &__img {
+    width: 50vw;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5vh;
+    align-items: flex-start;
+    
+  }
+  &__flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 9.1vw;
+  }
+
+  &__text {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+}

@@ -16,7 +16,8 @@ html {
 
 .container {
   max-width: 144rem;
-  margin: 11rem auto;
+  margin: 0 auto;
+  padding: 4rem 8.2vw;
 }
 
 body {
@@ -24,6 +25,273 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: #636060;
+}
+
+.heading-1 {
+  font-size: 4.5rem;
+  line-height: 5rem;
+  font-weight: 700;
+  color: #717171;
+}
+.heading-1--modify {
+  color: #499A18;
+}
+
+.heading-2 {
+  font-family: "Inika", sans-serif;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  font-weight: 400;
+  color: #499A18;
+}
+.heading-2--modify {
+  color: #E06733;
+}
+.heading-2--centered {
+  text-align: center;
+  font-weight: 700;
+}
+
+.heading-3 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #000;
+}
+.heading-3--modify {
+  color: #499A18;
+}
+
+.heading-5 {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #E06733;
+}
+
+.mb-huge {
+  margin-bottom: 12rem;
+}
+
+.mb-big {
+  margin-bottom: 9rem;
+}
+
+.mb-medium {
+  margin-bottom: 6rem;
+}
+
+.mb-small {
+  margin-bottom: 3rem;
+}
+
+.nav {
+  font-family: "Inika", sans-serif;
+  font-size: 1.6rem;
+  color: #010201;
+}
+.nav__list {
+  display: flex;
+  gap: 4.1vw;
+}
+.nav__item {
+  list-style: none;
+}
+.nav__link:link, .nav__link:active {
+  text-decoration: none;
+}
+.nav__link--active {
+  color: #E06733;
+  font-weight: 700;
+  cursor: default;
+}
+
+.btn {
+  font-size: 1.6rem;
+  color: #000;
+  background-color: transparent;
+  border: 0.2rem solid #E06733;
+  padding: 1.4rem 2.7rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:active {
+  transform: translateY(0.3rem);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid #E3E1D5;
+  border-radius: 2rem;
+  padding-bottom: 3rem;
+}
+.card__img {
+  width: 100%;
+  border-radius: 2rem;
+}
+.card__text {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #717171;
+}
+
+.table {
+  flex: 0 1 25%;
+}
+.table__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 3rem 4rem;
+  border: 1px solid #E3E1D5;
+  border-radius: 2rem;
+}
+.table__form select {
+  min-width: 200px;
+  max-width: 15vw;
+  background-color: #EDF2EC;
+  border: none;
+  padding: 1.5rem 4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 2rem;
+  appearance: none;
+  box-sizing: border-box;
+  background: url("../../img/accordion_btn.png") no-repeat, #EDF2EC;
+  background-position: right 3rem center;
+  background-size: 16px 16px;
+}
+.table__form select option {
+  font-family: "Inter", sans-serif;
+}
+.table__form select:focus,
+.table__form select:active {
+  background-color: #D6E7D2;
+}
+
+.header {
+  background-color: #EDF2EC;
+}
+.header__flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+}
+.logo__text {
+  font-family: "Inika";
+  font-size: 1.6rem;
+}
+
+.welcome {
+  padding-top: 6rem;
+  background-color: #EDF2EC;
+}
+.welcome__img {
+  width: 50vw;
+}
+.welcome__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5vh;
+  align-items: flex-start;
+}
+.welcome__flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9.1vw;
+}
+.welcome__text {
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+
+.experience__flexbox {
+  display: flex;
+  gap: 16vw;
+  align-items: center;
+}
+.experience__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.experience__img {
+  width: 50vw;
+}
+.experience__text {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.service {
+  background-color: #EDF2EC;
+  padding: 4rem 0 12rem;
+}
+.service__heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 11vw;
+}
+.service__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5.5rem;
+  justify-content: center;
+}
+.service__list {
+  display: flex;
+  gap: 4vw;
+}
+.service--btn {
+  flex: 1 0 150px;
+  font-family: "Inika", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #E06733;
+}
+
+.prices__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.prices__contact {
+  text-align: right;
+  flex: 0 1 52%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3.8rem;
+}
+.prices__btn {
+  font-size: "Inika", sans-serif;
+  color: #E06733;
+  font-weight: 700;
+}
+.prices__img {
+  height: 100%;
+  width: auto;
+}
+
+.contact {
+  background-color: #EDF2EC;
+}
+.contact__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__img {
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

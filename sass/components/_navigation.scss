@@ -1,0 +1,21 @@
+.nav {
+  font-family: $font-secondary;
+  font-size: 1.6rem;
+  color: $color-link;
+  &__list {
+    display: flex;
+    gap: 4.1vw;
+  }
+  &__item {
+    list-style: none;
+  }
+  &__link:link,
+  &__link:active {
+    text-decoration: none;
+  }
+  &__link--active {
+    color: $color-secondary;
+    font-weight: 700;
+    cursor: default;
+  }
+}

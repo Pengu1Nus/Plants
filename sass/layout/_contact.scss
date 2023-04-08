@@ -1,0 +1,12 @@
+.contact {
+  background-color: $color-background;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    height: 100%;
+  }
+}

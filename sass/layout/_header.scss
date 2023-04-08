@@ -1,0 +1,18 @@
+.header {
+  background-color: $color-background;
+
+  &__flexbox {
+    display: flex;
+    justify-content: space-between;
+
+  }
+}
+
+.logo {
+  display: flex;
+
+  &__text {
+    font-family: "Inika";
+    font-size: 1.6rem;
+  }
+}

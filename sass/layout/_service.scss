@@ -1,0 +1,28 @@
+.service {
+  background-color: $color-background;
+  padding: 4rem 0 12rem;
+  &__heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 11vw;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5.5rem;
+    justify-content: center;
+  }
+  &__list {
+    display: flex;
+    gap: 4vw;
+  }
+  &--btn {
+    flex: 1 0 150px;
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    color: $color-secondary;
+  }
+}
