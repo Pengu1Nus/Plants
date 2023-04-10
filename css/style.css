@@ -13,11 +13,26 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 23.75em) {
+  html {
+    font-size: 37.5%;
+  }
+}
 
 .container {
   max-width: 144rem;
   margin: 0 auto;
-  padding: 4rem 8.2vw;
+  padding: 0 9vw;
+}
+@media (max-width: 48em) {
+  .container {
+    padding: 0 7vw;
+  }
 }
 
 body {
@@ -75,6 +90,11 @@ body {
 .mb-big {
   margin-bottom: 9rem;
 }
+@media (max-width: 48em) {
+  .mb-big {
+    margin-bottom: 6rem;
+  }
+}
 
 .mb-medium {
   margin-bottom: 6rem;
@@ -129,6 +149,11 @@ body {
   border-radius: 2rem;
   padding-bottom: 3rem;
 }
+@media (max-width: 48em) {
+  .card {
+    width: 40%;
+  }
+}
 .card__img {
   width: 100%;
   border-radius: 2rem;
@@ -174,8 +199,34 @@ body {
   background-color: #D6E7D2;
 }
 
+.city-form__list {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  background: #D6E7D2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  color: #717171;
+  letter-spacing: 0.05em;
+}
+
 .header {
   background-color: #EDF2EC;
+  padding: 5.5rem 0;
+}
+@media (max-width: 48em) {
+  .header {
+    padding: 5rem 0;
+  }
+}
+@media (max-width: 23.75em) {
+  .header {
+    padding: 4rem 0;
+  }
 }
 .header__flexbox {
   display: flex;
@@ -191,11 +242,22 @@ body {
 }
 
 .welcome {
-  padding-top: 6rem;
+  padding: 6rem 0;
   background-color: #EDF2EC;
+}
+@media (max-width: 48em) {
+  .welcome {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
 }
 .welcome__img {
   width: 50vw;
+}
+@media (max-width: 48em) {
+  .welcome__img {
+    width: 33vw;
+  }
 }
 .welcome__content {
   display: flex;
@@ -209,15 +271,35 @@ body {
   justify-content: space-between;
   gap: 9.1vw;
 }
+@media (max-width: 48em) {
+  .welcome__flexbox {
+    flex-direction: row-reverse;
+    gap: 7.1vw;
+  }
+}
 .welcome__text {
   font-size: 2rem;
   line-height: 3.5rem;
 }
 
+.experience {
+  padding: 9rem 0;
+}
+@media (max-width: 48em) {
+  .experience {
+    padding-top: 4rem;
+  }
+}
 .experience__flexbox {
   display: flex;
   gap: 16vw;
   align-items: center;
+}
+@media (max-width: 48em) {
+  .experience__flexbox {
+    flex-direction: column;
+    gap: 6vh;
+  }
 }
 .experience__content {
   display: flex;
@@ -226,6 +308,11 @@ body {
 }
 .experience__img {
   width: 50vw;
+}
+.experience__heading-2 {
+  width: 50vw;
+  text-align: center;
+  margin: 0 auto;
 }
 .experience__text {
   font-size: 2rem;
@@ -241,6 +328,13 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 11vw;
+}
+@media (max-width: 48em) {
+  .service__heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6vh;
+  }
 }
 .service__content {
   display: flex;
@@ -261,6 +355,14 @@ body {
   color: #E06733;
 }
 
+.prices {
+  padding: 4rem 0 13.5rem;
+}
+@media (max-width: 48em) {
+  .prices {
+    padding-bottom: 8rem;
+  }
+}
 .prices__flex {
   display: flex;
   justify-content: space-between;
@@ -272,6 +374,11 @@ body {
   flex-direction: column;
   align-items: flex-end;
   gap: 3.8rem;
+}
+@media (max-width: 48em) {
+  .prices__contact {
+    padding-top: 11rem;
+  }
 }
 .prices__btn {
   font-size: "Inika", sans-serif;
@@ -285,13 +392,71 @@ body {
 
 .contact {
   background-color: #EDF2EC;
+  padding-top: 6rem;
+}
+@media (max-width: 48em) {
+  .contact {
+    padding-top: 4rem;
+  }
 }
 .contact__flex {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 48em) {
+  .contact__flex {
+    flex-direction: column-reverse;
+    gap: 10vh;
+    align-items: center;
+  }
+}
 .contact__img {
   height: 100%;
+}
+@media (max-width: 48em) {
+  .contact__img {
+    height: 35%;
+    width: 35%;
+  }
+}
+
+.footer {
+  font-size: 2rem;
+  color: #000;
+  padding: 4rem 0;
+}
+@media (max-width: 48em) {
+  .footer {
+    padding: 3rem 0 1.5rem;
+  }
+}
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 48em) {
+  .footer__flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.footer__title a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+}
+.footer__title a:hover {
+  color: #E06733;
+}
+.footer__icons img {
+  display: inline-block;
+  width: 3.2rem;
+  height: 3.2rem;
+  transform: translateY(0.5rem);
+}
+.footer__icons img:hover {
+  background-image: linear-gradient(#E06733);
 }
 
 /*# sourceMappingURL=style.css.map */

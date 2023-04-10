@@ -1,9 +1,18 @@
 .experience {
+  padding: 9rem 0;
 
+  @include respond(tablet) {
+    padding-top: 4rem;
+  }
   &__flexbox {
     display: flex;
     gap: 16vw;
     align-items: center;
+
+    @include respond(tablet) {
+      flex-direction: column;
+      gap: 6vh;
+    }
   }
 
   &__content {
@@ -16,6 +25,12 @@
     width: 50vw;
   }
 
+  &__heading-2 {
+    width: 50vw;
+    text-align: center;
+    margin: 0 auto;
+    
+  }
   &__text {
     font-size: 2rem;
     line-height: 3rem;

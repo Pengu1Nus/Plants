@@ -1,5 +1,8 @@
 .prices {
-
+  padding: 4rem 0 13.5rem;
+  @include respond(tablet) {
+    padding-bottom: 8rem;
+  }
   &__flex {
     display: flex;
     justify-content: space-between;
@@ -12,6 +15,9 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 3.8rem;
+    @include respond(tablet) {
+      padding-top: 11rem;
+    }
   }
 
   &__btn {

@@ -1,12 +1,26 @@
 .contact {
   background-color: $color-background;
-
+  padding-top: 6rem;
+  @include respond(tablet) {
+    padding-top: 4rem;
+  }
   &__flex {
     display: flex;
     justify-content: space-between;
+
+    @include respond(tablet) {
+      flex-direction: column-reverse;
+      gap: 10vh;
+      align-items: center;
+    }
   }
 
   &__img {
     height: 100%;
+    
+    @include respond(tablet) {
+      height: 35%;
+      width: 35%;
+    }
   }
 }

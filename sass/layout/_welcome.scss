@@ -1,10 +1,18 @@
 .welcome {
-  padding-top: 6rem;
+  padding: 6rem 0;
   background-color: $color-background;
+  @include respond(tablet) {
+    padding-top:  5rem;
+    padding-bottom: 10rem;
+  }
 
   &__img {
     width: 50vw;
+    @include respond(tablet) {
+      width: 33vw;
+    }
   }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -17,6 +25,11 @@
     align-items: center;
     justify-content: space-between;
     gap: 9.1vw;
+
+    @include respond(tablet) {
+      flex-direction: row-reverse;
+      gap: 7.1vw;
+    }
   }
 
   &__text {

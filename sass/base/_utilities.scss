@@ -3,6 +3,9 @@
 }
 .mb-big {
   margin-bottom: 9rem;
+  @include respond(tablet) {
+    margin-bottom: 6rem;
+  }
 }
 
 .mb-medium {

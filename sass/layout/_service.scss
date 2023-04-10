@@ -6,6 +6,12 @@
     justify-content: flex-start;
     align-items: center;
     gap: 11vw;
+
+    @include respond(tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6vh;
+    }
   }
   &__content {
     display: flex;

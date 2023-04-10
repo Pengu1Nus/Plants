@@ -12,4 +12,12 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px 10px/16px = 62.5%;
+
+  @include respond(tablet) {
+    font-size: 50%; // 1rem = 8px, 8px/16px = 50%
+  }
+
+  @include respond(phone) {
+    font-size: 37.5%; // 1rem = 8px, 8px/16px = 50%
+  }
 }
