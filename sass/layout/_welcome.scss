@@ -5,11 +5,17 @@
     padding-top:  5rem;
     padding-bottom: 10rem;
   }
+  @include respond(phone) {
+    padding: 2rem 0;
+  }
 
   &__img {
     width: 50vw;
     @include respond(tablet) {
       width: 33vw;
+    }
+    @include respond(phone) {
+      display: none;
     }
   }
 

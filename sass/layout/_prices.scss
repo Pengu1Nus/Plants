@@ -6,8 +6,20 @@
   &__flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    @include respond(tablet) {
+      justify-content: center;
+    }
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
-
+  &__heading-3 {
+    text-align: center;
+  }
   &__contact {
     text-align: right;
     flex: 0 1 52%;
@@ -17,6 +29,11 @@
     gap: 3.8rem;
     @include respond(tablet) {
       padding-top: 11rem;
+    }
+    @include respond(phone) {
+      align-items: center;
+      padding-top: 3rem;
+      gap: 1.8rem;
     }
   }
 
@@ -28,5 +45,9 @@
   &__img {
     height: 100%;
     width: auto;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 }

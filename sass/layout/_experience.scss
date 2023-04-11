@@ -4,10 +4,15 @@
   @include respond(tablet) {
     padding-top: 4rem;
   }
+  @include respond(phone) {
+    padding-top: 4.5rem;
+    padding-bottom: 5rem;
+  }
   &__flexbox {
     display: flex;
-    gap: 16vw;
+    gap: 8vw;
     align-items: center;
+    justify-content: space-between;
 
     @include respond(tablet) {
       flex-direction: column;
@@ -22,14 +27,23 @@
   }
 
   &__img {
-    width: 50vw;
+    width: 60%;
+    height: 60%;
+    @include respond(tablet) {
+      width: 50%;
+      height: 50%;
+    }
   }
 
   &__heading-2 {
-    width: 50vw;
-    text-align: center;
-    margin: 0 auto;
-    
+    @include respond(tablet) {
+      width: 50vw;
+      text-align: center;
+      margin: 0 auto;  
+    }
+    @include respond(phone) {
+      width: 75vw;
+    }
   }
   &__text {
     font-size: 2rem;

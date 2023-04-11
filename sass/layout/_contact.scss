@@ -13,6 +13,10 @@
       gap: 10vh;
       align-items: center;
     }
+
+    @include respond(phone) {
+      gap: 50vh;
+    }
   }
 
   &__img {

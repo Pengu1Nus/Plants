@@ -113,6 +113,11 @@ body {
   display: flex;
   gap: 4.1vw;
 }
+@media (max-width: 23.75em) {
+  .nav__list {
+    display: none;
+  }
+}
 .nav__item {
   list-style: none;
 }
@@ -123,6 +128,32 @@ body {
   color: #E06733;
   font-weight: 700;
   cursor: default;
+}
+.nav__burger {
+  position: relative;
+}
+.nav__burger, .nav__burger::before, .nav__burger::after {
+  width: 40px;
+  height: 2px;
+  background-color: #717171;
+  display: none;
+}
+@media (max-width: 23.75em) {
+  .nav__burger, .nav__burger::before, .nav__burger::after {
+    display: inline-block;
+  }
+}
+.nav__burger::before, .nav__burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+.nav__burger::before {
+  top: -8px;
+}
+.nav__burger::after {
+  top: 8px;
 }
 
 .btn {
@@ -152,6 +183,11 @@ body {
 @media (max-width: 48em) {
   .card {
     width: 40%;
+  }
+}
+@media (max-width: 23.75em) {
+  .card {
+    width: 90%;
   }
 }
 .card__img {
@@ -213,6 +249,11 @@ body {
   color: #717171;
   letter-spacing: 0.05em;
 }
+@media (max-width: 23.75em) {
+  .city-form__list {
+    font-size: 3.35rem;
+  }
+}
 
 .header {
   background-color: #EDF2EC;
@@ -221,11 +262,6 @@ body {
 @media (max-width: 48em) {
   .header {
     padding: 5rem 0;
-  }
-}
-@media (max-width: 23.75em) {
-  .header {
-    padding: 4rem 0;
   }
 }
 .header__flexbox {
@@ -251,12 +287,22 @@ body {
     padding-bottom: 10rem;
   }
 }
+@media (max-width: 23.75em) {
+  .welcome {
+    padding: 2rem 0;
+  }
+}
 .welcome__img {
   width: 50vw;
 }
 @media (max-width: 48em) {
   .welcome__img {
     width: 33vw;
+  }
+}
+@media (max-width: 23.75em) {
+  .welcome__img {
+    display: none;
   }
 }
 .welcome__content {
@@ -290,10 +336,17 @@ body {
     padding-top: 4rem;
   }
 }
+@media (max-width: 23.75em) {
+  .experience {
+    padding-top: 4.5rem;
+    padding-bottom: 5rem;
+  }
+}
 .experience__flexbox {
   display: flex;
-  gap: 16vw;
+  gap: 8vw;
   align-items: center;
+  justify-content: space-between;
 }
 @media (max-width: 48em) {
   .experience__flexbox {
@@ -307,12 +360,26 @@ body {
   gap: 4rem;
 }
 .experience__img {
-  width: 50vw;
+  width: 60%;
+  height: 60%;
 }
-.experience__heading-2 {
-  width: 50vw;
-  text-align: center;
-  margin: 0 auto;
+@media (max-width: 48em) {
+  .experience__img {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media (max-width: 48em) {
+  .experience__heading-2 {
+    width: 50vw;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 23.75em) {
+  .experience__heading-2 {
+    width: 75vw;
+  }
 }
 .experience__text {
   font-size: 2rem;
@@ -345,6 +412,12 @@ body {
 .service__list {
   display: flex;
   gap: 4vw;
+  flex-wrap: wrap;
+}
+@media (max-width: 23.75em) {
+  .service__list {
+    padding-top: 3.5rem;
+  }
 }
 .service--btn {
   flex: 1 0 150px;
@@ -353,6 +426,11 @@ body {
   font-size: 2rem;
   line-height: 2.6rem;
   color: #E06733;
+}
+@media (max-width: 23.75em) {
+  .service--btn {
+    flex: 0 1 120px;
+  }
 }
 
 .prices {
@@ -366,6 +444,23 @@ body {
 .prices__flex {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media (max-width: 48em) {
+  .prices__flex {
+    justify-content: center;
+  }
+}
+@media (max-width: 23.75em) {
+  .prices__flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.prices__heading-3 {
+  text-align: center;
 }
 .prices__contact {
   text-align: right;
@@ -380,6 +475,13 @@ body {
     padding-top: 11rem;
   }
 }
+@media (max-width: 23.75em) {
+  .prices__contact {
+    align-items: center;
+    padding-top: 3rem;
+    gap: 1.8rem;
+  }
+}
 .prices__btn {
   font-size: "Inika", sans-serif;
   color: #E06733;
@@ -388,6 +490,11 @@ body {
 .prices__img {
   height: 100%;
   width: auto;
+}
+@media (max-width: 23.75em) {
+  .prices__img {
+    display: none;
+  }
 }
 
 .contact {
@@ -408,6 +515,11 @@ body {
     flex-direction: column-reverse;
     gap: 10vh;
     align-items: center;
+  }
+}
+@media (max-width: 23.75em) {
+  .contact__flex {
+    gap: 50vh;
   }
 }
 .contact__img {

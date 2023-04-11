@@ -5,10 +5,6 @@
   @include respond(tablet) {
     padding: 5rem 0;
   }
-
-  @include respond(phone) {
-    padding: 4rem 0;
-  }
   
   &__flexbox {
     display: flex;

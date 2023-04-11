@@ -11,6 +11,9 @@
   @include respond(tablet) {
     width: 40%;
   }
+  @include respond(phone) {
+    width: 90%;
+  }
   &__img {
     width: 100%;
     border-radius: 2rem;
